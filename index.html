@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Minecraft chrome edition v1.0</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" type="imagex/png" href="https://studio.cults3d.com/3BNq_sZtyAub73Ai0QxmnNDy_IM=/516x516/https://files.cults3d.com/uploaders/18425945/illustration-file/e3b30087-aa03-45af-a57e-7bb6e98e0284/Grass.Block.png">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Minecraft </title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://minecraft--duck132912.repl.co/minecraft.css" />
+	<link rel="shortcut icon" href="https://minecraft--duck132912.repl.co/icon.png"
+	 type="image/x-icon" />
+	<link rel="icon" href="https://minecraft--duck132912.repl.co/icon.png"
+	 type="image/x-icon" />
+</head>
+
+<body translate="no" onpageshow="updateidea();">
+		<script src="https://minecraft--duck132912.repl.co/script.js">
+		</script>
+		<link rel="stylesheet" type="text/css" href="https://minecraft--duck132912.repl.co/style.css">
+		<img alt="Minecraft" id="logo" src="https://minecraft--duck132912.repl.co/minecraft.svg"/>
+<div id="flashingtext">Chrome Edition RSA v1.0!</div>
+<main>
+<button class="button" onclick="play()">Singleplayer</button>
+<br>
+<button class="button" onclick="playmulti()" id="playmulti">Multiplayer</button> <br>
+<button class="button" onclick="alert('Thanks to classic.minecraft.net for the game part')">Credits</button>
+<button class="button" onclick="how()">How to play</button>
+<audio id="audio">
+  <source src="minecraft.mp4">
+</audio>
+<button id="button" class="button">Play audio</button>
+<button class="button button_small left" onclick="change()">Options</button>
+<button class="button button_small right" onclick="quit();">Quit Game</button>
+<script src="https://minecraft--duck132912.repl.co/minecraft.js"></script>
+<script type="text/javascript">
+function updateidea() {
+  if (!("Notification" in window)) {
+    alert("This browser does not support desktop notification");
+  }
+  else if (Notification.permission === "granted") {
+    var notification = new Notification("updates? chat--duck132912.repl.co I am duck1321912");
+  }
+  else if (Notification.permission !== "denied") {
+    Notification.requestPermission().then(function (permission) {
+      if (permission === "granted") {
+        var notification = new Notification("updates? chat--duck132912.repl.co I am duck1321912");
+      }
+    });
+  }
+}Notification.requestPermission().then(function(result) {
+  console.log(result);
+});function spawnNotification(body, icon, title) {
+  var options = {
+      body: body,
+      icon: icon
+  };
+}
+var button = document.getElementById("button");
+var audio = document.getElementById("audio");
+button.addEventListener("click", function(){
+  if(audio.paused){
+    audio.play();
+    button.innerHTML = "Pause audio";
+  } else {
+    audio.pause();
+    button.innerHTML = "Play audio";
+}
+});
+</script>
+<div class="parent">
+  <div class="base"></div>
+  <a href="#"><div class="child" title="Finder" style="background-image: url('https://cdn-icons-png.flaticon.com/512/25/25231.png');"></div></a>
+  <a href="#"><div class="child" title="Chrome" style="background-image: url('https://findicons.com/files/icons/2788/circle/512/xda.png');"></div></a>
+</div>
+</main>
+</body>
+</html>
+<!-- partial -->
+  
+</body>
+</html>
